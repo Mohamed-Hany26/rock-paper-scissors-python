@@ -34,9 +34,9 @@ python rock-paper-scissors-chatgpt.py
 
 ## 📸 Sample Output
 
-Enter Your Name:
-Hi! Mohamed
-What's your choice? 'r' for rock...
-User Played: r
-PC Played: s
+Enter Your Name: Hi! Mohamed <br>
+What's your choice? 'r' for rock... <br>
+User Played: r <br>
+PC Played: s <br>
 You win Mohamed
+
