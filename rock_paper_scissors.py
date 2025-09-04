@@ -1,23 +1,35 @@
-# Start the game
-# Ask the player to make a move (r, p, s)
-# PC would select a move radomly
-# PC == Player -> Tie
-# (Player == P and PC == Rock) or (Player == R and PC == Scissors) or (Player == Scissors and PC == Paper)
-## User won / You won
-# Any other case
-## PC won / You lose
+# start the game 
+# Ask the user to choose her move (R , P , S)
+# pc choose move randomly
+# if pc == user -> Tie 
+# (Player == paper and pc  == rock) 
+# or (player == rock and pc scissors) 
+# or (player == scissors and pc paper) 
+## You win / user won
+# any other case 
+## pc won / You lose 
 
 import random
 
-user = input("What's your choice? 'r' for Rock, 'p' for Paper, and 's' for Scissors\n")
-pc = random.choice(['r', 'p', 's'])
+print("+===================================================================================+")
+name =input("Enter Your Name : \n ")
+print("+===================================================================================+")
+print("Hi! " + name)
+print("Welcome In Rock , Paper , scissors Game")
+print("+===================================================================================+")
 
-print("User played: " + user)
-print("PC played: " + pc)
+user = input("what's your choice? 'r' for rock , 'p' for paper , and 's' for scissors  \n")
+pc = random.choice(['r','p','s'])
 
-if user == pc:
+print("User Played: " + user)
+print("Pc Played: " + pc)
+
+if user == pc :
     print("It's a tie!")
-elif (user == 'p' and pc == 'r') or (user == 'r' and pc == 's') or (user == 's' and pc == 'p'):
-    print("You won!")
+    print("Try Agian")
+elif (user == 'p' and pc  == 'r') or (user == 'r' and pc =='s') or (user == 's' and pc == 'p'):
+    print("You win " + name)
 else:
-    print("You lose!")
+    print("Pc win  / You Lose! " + name)
+
+print("+===================================================================================+")
